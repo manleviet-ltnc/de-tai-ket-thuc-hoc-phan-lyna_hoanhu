@@ -30,80 +30,88 @@
         {
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnThờigian = new System.Windows.Forms.Button();
-            this.btnSựKiện = new System.Windows.Forms.Button();
+            this.btnDateTime = new System.Windows.Forms.Button();
+            this.btnEvents = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tbxEvents = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSave
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(41, 193);
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSave.Location = new System.Drawing.Point(13, 215);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 35);
+            this.btnSave.Size = new System.Drawing.Size(75, 59);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(166, 193);
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Location = new System.Drawing.Point(259, 215);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 35);
+            this.btnCancel.Size = new System.Drawing.Size(75, 59);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnDateTime
             // 
-            this.button1.Location = new System.Drawing.Point(117, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 36);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDateTime.Location = new System.Drawing.Point(12, 29);
+            this.btnDateTime.Name = "btnDateTime";
+            this.btnDateTime.Size = new System.Drawing.Size(75, 36);
+            this.btnDateTime.TabIndex = 4;
+            this.btnDateTime.Text = "Date Time";
+            this.btnDateTime.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEvents
             // 
-            this.button2.Location = new System.Drawing.Point(117, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 35);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEvents.Location = new System.Drawing.Point(12, 77);
+            this.btnEvents.Name = "btnEvents";
+            this.btnEvents.Size = new System.Drawing.Size(75, 35);
+            this.btnEvents.TabIndex = 5;
+            this.btnEvents.Text = "Events";
+            this.btnEvents.UseVisualStyleBackColor = true;
             // 
-            // btnThờigian
+            // dateTimePicker1
             // 
-            this.btnThờigian.Location = new System.Drawing.Point(12, 39);
-            this.btnThờigian.Name = "btnThờigian";
-            this.btnThờigian.Size = new System.Drawing.Size(75, 36);
-            this.btnThờigian.TabIndex = 4;
-            this.btnThờigian.Text = "Thời gian";
-            this.btnThờigian.UseVisualStyleBackColor = true;
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(93, 35);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(241, 20);
+            this.dateTimePicker1.TabIndex = 6;
             // 
-            // btnSựKiện
+            // tbxEvents
             // 
-            this.btnSựKiện.Location = new System.Drawing.Point(13, 106);
-            this.btnSựKiện.Name = "btnSựKiện";
-            this.btnSựKiện.Size = new System.Drawing.Size(75, 35);
-            this.btnSựKiện.TabIndex = 5;
-            this.btnSựKiện.Text = "Sự Kiện";
-            this.btnSựKiện.UseVisualStyleBackColor = true;
+            this.tbxEvents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxEvents.Location = new System.Drawing.Point(93, 77);
+            this.tbxEvents.Multiline = true;
+            this.tbxEvents.Name = "tbxEvents";
+            this.tbxEvents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxEvents.Size = new System.Drawing.Size(241, 132);
+            this.tbxEvents.TabIndex = 7;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.btnSựKiện);
-            this.Controls.Add(this.btnThờigian);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(346, 286);
+            this.Controls.Add(this.tbxEvents);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnEvents);
+            this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,9 +119,9 @@
 
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnThờigian;
-        private System.Windows.Forms.Button btnSựKiện;
+        private System.Windows.Forms.Button btnDateTime;
+        private System.Windows.Forms.Button btnEvents;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox tbxEvents;
     }
 }

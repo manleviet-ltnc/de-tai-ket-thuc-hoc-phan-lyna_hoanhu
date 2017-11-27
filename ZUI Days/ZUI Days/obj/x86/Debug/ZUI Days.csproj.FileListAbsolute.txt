@@ -6,3 +6,12 @@ E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\Z
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.GenerateResource.Cache
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.exe
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.pdb
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.exe
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.pdb
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.exe
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.pdb
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Form1.resources
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Form2.resources
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Properties.Resources.resources
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.GenerateResource.Cache
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csprojResolveAssemblyReference.cache
