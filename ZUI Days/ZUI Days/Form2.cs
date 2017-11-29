@@ -15,5 +15,15 @@ namespace ZUI_Days
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

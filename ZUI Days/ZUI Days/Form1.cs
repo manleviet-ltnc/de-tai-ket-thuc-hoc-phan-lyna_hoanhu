@@ -15,5 +15,11 @@ namespace ZUI_Days
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
     }
 }

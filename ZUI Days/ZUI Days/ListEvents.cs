@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ZUI_Days
 {
-    class Class1
+    class ListEvents
     {
     }
 }
