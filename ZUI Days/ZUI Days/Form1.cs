@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+using cExcel = Microsoft.Office.Interop.Excel;
 
 namespace ZUI_Days
 {
@@ -21,5 +23,12 @@ namespace ZUI_Days
             Form2 f2 = new Form2();
             f2.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DataGridViewRow dtc = new DataGridViewRow();
+        }
+        
+        
     }
 }

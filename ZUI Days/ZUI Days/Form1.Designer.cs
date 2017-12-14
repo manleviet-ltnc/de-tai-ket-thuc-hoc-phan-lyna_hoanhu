@@ -29,42 +29,26 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridDanhSach = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DateTimecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDanhSach)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // gridDanhSach
             // 
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
+            this.gridDanhSach.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
+            this.gridDanhSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDanhSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DateTimecol,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(298, 287);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.HeaderText = "DateTime";
-            this.Column1.MinimumWidth = 130;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 130;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Events";
-            this.Column2.MinimumWidth = 130;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 130;
+            this.gridDanhSach.Location = new System.Drawing.Point(12, 12);
+            this.gridDanhSach.Name = "gridDanhSach";
+            this.gridDanhSach.Size = new System.Drawing.Size(298, 287);
+            this.gridDanhSach.TabIndex = 0;
             // 
             // btnAdd
             // 
@@ -97,6 +81,22 @@
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
             // 
+            // DateTimecol
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.DateTimecol.DefaultCellStyle = dataGridViewCellStyle1;
+            this.DateTimecol.HeaderText = "DateTime";
+            this.DateTimecol.MinimumWidth = 130;
+            this.DateTimecol.Name = "DateTimecol";
+            this.DateTimecol.Width = 130;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Events";
+            this.Column2.MinimumWidth = 130;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 130;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,21 +105,22 @@
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridDanhSach);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridDanhSach)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView gridDanhSach;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateTimecol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

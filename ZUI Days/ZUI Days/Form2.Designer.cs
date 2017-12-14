@@ -32,7 +32,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDateTime = new System.Windows.Forms.Button();
             this.btnEvents = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDateTime = new System.Windows.Forms.DateTimePicker();
             this.tbxEvents = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -78,14 +78,14 @@
             this.btnEvents.Text = "Events";
             this.btnEvents.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpDateTime
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.dtpDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(93, 35);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtpDateTime.Location = new System.Drawing.Point(93, 35);
+            this.dtpDateTime.Name = "dtpDateTime";
+            this.dtpDateTime.Size = new System.Drawing.Size(241, 20);
+            this.dtpDateTime.TabIndex = 6;
             // 
             // tbxEvents
             // 
@@ -105,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(346, 286);
             this.Controls.Add(this.tbxEvents);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDateTime);
             this.Controls.Add(this.btnEvents);
             this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnCancel);
@@ -123,7 +123,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnDateTime;
         private System.Windows.Forms.Button btnEvents;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox tbxEvents;
+        public System.Windows.Forms.DateTimePicker dtpDateTime;
     }
 }

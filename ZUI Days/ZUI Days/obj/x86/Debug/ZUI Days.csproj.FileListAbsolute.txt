@@ -15,3 +15,4 @@ C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI D
 C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Properties.Resources.resources
 C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.GenerateResource.Cache
 C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csprojResolveAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.ResolveComReference.cache
