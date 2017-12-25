@@ -16,3 +16,15 @@ C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI D
 C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.GenerateResource.Cache
 C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csprojResolveAssemblyReference.cache
 C:\Users\pc\Documents\GitHub\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.ResolveComReference.cache
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.exe
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.pdb
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csprojResolveAssemblyReference.cache
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.ResolveComReference.cache
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Properties.Resources.resources
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.GenerateResource.Cache
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.CoreCompileInputs.cache
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.exe
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.pdb
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.ListEvents.resources
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Event.resources
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.EditEvent.resources

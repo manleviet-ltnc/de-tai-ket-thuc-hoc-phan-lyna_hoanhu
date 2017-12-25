@@ -7,18 +7,16 @@ namespace ZUI_Days
 {
     class EventsList
     {
-        List < Events > events ;
+        public List<Events> events;
+
         public EventsList()
-         {
-              events = new List<Events>();
-         }
-        public void Setevents(Events events)
         {
-             this.events.Add(events);
+            events = new List<Events>();
         }
 
-        
-           
-        
+        public void AddEvent(Events events)
+        {
+            this.events.Add(events);
+        }
     }
 }
