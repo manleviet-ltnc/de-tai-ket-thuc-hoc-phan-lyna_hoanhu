@@ -1,7 +1,5 @@
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.exe
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.pdb
-E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Form1.resources
-E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Form2.resources
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Properties.Resources.resources
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.GenerateResource.Cache
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.exe
@@ -28,3 +26,8 @@ E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI 
 E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.ListEvents.resources
 E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Event.resources
 E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.EditEvent.resources
+E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.ResolveComReference.cache
+E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csprojResolveAssemblyReference.cache
+E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.EditEvent.resources
+E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.ListEvents.resources
+E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Event.resources
