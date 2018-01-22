@@ -6,18 +6,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace ZUI_Days
 {
     public partial class EditEvent : Form
     {
-        public Events _evt;
+        Events evt;
 
-        public EditEvent(Events evt)
+        public EditEvent(Events _evt)
         {
             InitializeComponent();
-            _evt = evt;
             txtEvent.Text = _evt.TenSuKien;
+            evt = _evt;
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -29,8 +30,8 @@ namespace ZUI_Days
                 return;
             }
 
-            _evt.NgayThang = dtpDate.Value.ToString("MM-dd-yyyy");
-            _evt.TenSuKien = txtEvent.Text;
+            evt.NgayThang = dtpDate.Value;
+            evt.TenSuKien = txtEvent.Text;
             Close();
         }
     }

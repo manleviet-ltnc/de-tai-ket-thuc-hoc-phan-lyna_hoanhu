@@ -31,3 +31,4 @@ E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\Z
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.EditEvent.resources
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.ListEvents.resources
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Event.resources
+E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Menu.resources

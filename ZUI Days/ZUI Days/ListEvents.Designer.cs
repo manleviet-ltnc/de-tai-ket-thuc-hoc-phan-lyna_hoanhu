@@ -34,8 +34,10 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.DateTimecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eventcol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateTimecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DayRemainingCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridEventsList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,20 +51,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridEventsList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridEventsList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
-            this.gridEventsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridEventsList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eventcol,
             this.DateTimecol,
-            this.Eventcol});
+            this.DayRemainingCol});
             this.gridEventsList.Location = new System.Drawing.Point(12, 12);
             this.gridEventsList.Name = "gridEventsList";
             this.gridEventsList.ReadOnly = true;
-            this.gridEventsList.Size = new System.Drawing.Size(298, 287);
+            this.gridEventsList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.gridEventsList.Size = new System.Drawing.Size(375, 287);
             this.gridEventsList.TabIndex = 0;
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.Location = new System.Drawing.Point(316, 67);
+            this.btnAdd.Location = new System.Drawing.Point(396, 67);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 35);
             this.btnAdd.TabIndex = 1;
@@ -73,7 +76,7 @@
             // btnEdit
             // 
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEdit.Location = new System.Drawing.Point(316, 140);
+            this.btnEdit.Location = new System.Drawing.Point(396, 124);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 35);
             this.btnEdit.TabIndex = 2;
@@ -84,7 +87,7 @@
             // btnRemove
             // 
             this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemove.Location = new System.Drawing.Point(316, 217);
+            this.btnRemove.Location = new System.Drawing.Point(396, 182);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 35);
             this.btnRemove.TabIndex = 3;
@@ -92,27 +95,49 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
+            // Eventcol
+            // 
+            this.Eventcol.FillWeight = 106.599F;
+            this.Eventcol.HeaderText = "Event";
+            this.Eventcol.MinimumWidth = 70;
+            this.Eventcol.Name = "Eventcol";
+            this.Eventcol.ReadOnly = true;
+            // 
             // DateTimecol
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.DateTimecol.DefaultCellStyle = dataGridViewCellStyle1;
+            this.DateTimecol.FillWeight = 106.599F;
             this.DateTimecol.HeaderText = "Date";
-            this.DateTimecol.MinimumWidth = 120;
+            this.DateTimecol.MinimumWidth = 50;
             this.DateTimecol.Name = "DateTimecol";
             this.DateTimecol.ReadOnly = true;
             // 
-            // Eventcol
+            // DayRemainingCol
             // 
-            this.Eventcol.HeaderText = "Event";
-            this.Eventcol.MinimumWidth = 130;
-            this.Eventcol.Name = "Eventcol";
-            this.Eventcol.ReadOnly = true;
+            this.DayRemainingCol.FillWeight = 86.80203F;
+            this.DayRemainingCol.HeaderText = "Day remaining";
+            this.DayRemainingCol.MinimumWidth = 80;
+            this.DayRemainingCol.Name = "DayRemainingCol";
+            this.DayRemainingCol.ReadOnly = true;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Location = new System.Drawing.Point(396, 264);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 35);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // ListEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 311);
+            this.ClientSize = new System.Drawing.Size(480, 311);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -133,8 +158,10 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateTimecol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eventcol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateTimecol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DayRemainingCol;
+        private System.Windows.Forms.Button btnBack;
     }
 }
 

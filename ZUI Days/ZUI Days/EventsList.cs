@@ -5,14 +5,9 @@ using System.Text;
 
 namespace ZUI_Days
 {
-    class EventsList
+    public class EventsList
     {
-        public List<Events> events;
-
-        public EventsList()
-        {
-            events = new List<Events>();
-        }
+        public List<Events> events = new List<Events>();
 
         public void AddEvent(Events events)
         {

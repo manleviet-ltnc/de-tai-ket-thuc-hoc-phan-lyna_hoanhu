@@ -46,7 +46,7 @@
             this.label1.Location = new System.Drawing.Point(9, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Date:";
             // 
             // label2
@@ -56,7 +56,7 @@
             this.label2.Location = new System.Drawing.Point(9, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 20);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Event:";
             // 
             // txtEvent
@@ -65,7 +65,7 @@
             this.txtEvent.Location = new System.Drawing.Point(72, 59);
             this.txtEvent.Name = "txtEvent";
             this.txtEvent.Size = new System.Drawing.Size(274, 26);
-            this.txtEvent.TabIndex = 0;
+            this.txtEvent.TabIndex = 3;
             // 
             // dtpDate
             // 
@@ -73,7 +73,7 @@
             this.dtpDate.Location = new System.Drawing.Point(72, 23);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(274, 26);
-            this.dtpDate.TabIndex = 2;
+            this.dtpDate.TabIndex = 1;
             // 
             // errorProvider
             // 
@@ -85,7 +85,7 @@
             this.btnOK.Location = new System.Drawing.Point(284, 99);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(62, 30);
-            this.btnOK.TabIndex = 1;
+            this.btnOK.TabIndex = 4;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);

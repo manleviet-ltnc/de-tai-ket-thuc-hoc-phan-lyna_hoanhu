@@ -11,12 +11,13 @@ namespace ZUI_Days
 {
     public partial class Event : Form
     {
-        EventsList eventsList = new EventsList();
+        EventsList eventsList;
         Events evts = new Events();
 
-        public Event()
+        public Event(EventsList _eventsList)
         {
             InitializeComponent();
+            eventsList = _eventsList;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -38,10 +39,10 @@ namespace ZUI_Days
             {
                 using (sw = File.AppendText("Events list.txt"))
                 {
-                    sw.WriteLine(evts.NgayThang + ":" + evts.TenSuKien);
+                    sw.WriteLine(evts);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -52,12 +53,14 @@ namespace ZUI_Days
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            evts.NgayThang = dtpDate.Value.ToString("MM-dd-yyyy");
+            evts.NgayThang = dtpDate.Value;
             evts.TenSuKien = txtEvent.Text;
             eventsList.AddEvent(evts);
             Save();
+
+            txtEvent.Text = "";
         }
     }
 }
