@@ -7,7 +7,7 @@ using System.IO;
 
 namespace ZUI_Days
 {
-    public class Events : IComparable
+    public class Events
     {
         public string TenSuKien { get; set; }
         public DateTime NgayThang { get; set; }
@@ -17,14 +17,6 @@ namespace ZUI_Days
         {
             TenSuKien = nameEvent;
             NgayThang = date;
-        }
-
-        public int CompareTo(object obj)
-        {
-            Events e = obj as Events;
-            if (e != null)
-                return NgayThang.CompareTo(e.NgayThang);
-            throw new ArgumentException("not a Events");
         }
 
         public override string ToString()

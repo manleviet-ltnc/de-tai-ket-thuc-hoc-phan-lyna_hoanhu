@@ -15,6 +15,7 @@ namespace ZUI_Days
     {
         Thread thread;
         EventsList eventsList = new EventsList();
+        int count = 0;
 
         public ListEvents()
         {
@@ -29,14 +30,14 @@ namespace ZUI_Days
                 using (sr = new StreamReader("Events list.txt"))
                 {
                     string line = null;
-                    int i = 0;
                     while ((line = sr.ReadLine()) != null)
                     {
+                        // Dựa vào dấu 2 chấm để chia dòng đọc được thành các phần đưa vào các chỉ số input
                         string[] inputs = line.Split(':');
                         DateTime dt = DateTime.Parse(inputs[0], System.Globalization.CultureInfo.InvariantCulture);
                         eventsList.events.Add(new Events(inputs[1], dt));
-                        gridEventsList.Rows.Add(eventsList.events[i].TenSuKien, eventsList.events[i].NgayThang.ToString("MM-dd-yyyy"));
-                        i++;
+                        gridEventsList.Rows.Add(eventsList.events[count].TenSuKien, eventsList.events[count].NgayThang.ToString("MM-dd-yyyy"));
+                        count++;
                     }
                 }
             }
@@ -70,8 +71,9 @@ namespace ZUI_Days
             gridEventsList.Sort(gridEventsList.Columns[2], ListSortDirection.Ascending);
         }
 
-        public int DaysBetween(int month, int day, int year, int m, int d, int y)
+        private int DaysBetween(int month, int day, int year, int m, int d, int y)
         {
+            // Tính số ngày tuyệt đối
             int absoluteDay1 = DayNumber(month, day, year) + 365 * (year - 1)
                                + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400;
 
@@ -81,7 +83,7 @@ namespace ZUI_Days
             return Math.Abs(absoluteDay1 - absoluteDay2);
         }
 
-        public int DayNumber(int month, int day, int year)
+        private int DayNumber(int month, int day, int year)
         {
             int dayNumber = (month - 1) * 31 + day;
             if (month > 2)
@@ -98,11 +100,15 @@ namespace ZUI_Days
         {
             Event ev = new Event(eventsList);
             ev.ShowDialog();
-            gridEventsList.Rows.Add(eventsList.events[eventsList.events.Count - 1].TenSuKien, eventsList.events[eventsList.events.Count - 1].NgayThang.ToString("MM-dd-yyyy"));
-            gridEventsList.Rows[gridEventsList.RowCount - 1].Cells[2].Value = DaysBetween(DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Year,
-                                                                                          eventsList.events[eventsList.events.Count - 1].NgayThang.Month, eventsList.events[eventsList.events.Count - 1].NgayThang.Day, (eventsList.events[eventsList.events.Count - 1].NgayThang.Month > DateTime.Now.Month) ? DateTime.Now.Year : DateTime.Now.Year + 1);
-            SortDayRemaining();
-            gridEventsList.CurrentCell = gridEventsList.Rows[gridEventsList.RowCount - 1].Cells[0];
+
+            if (count == eventsList.events.Count - 1)
+            {
+                gridEventsList.Rows.Add(eventsList.events[eventsList.events.Count - 1].TenSuKien, eventsList.events[eventsList.events.Count - 1].NgayThang.ToString("MM-dd-yyyy"));
+                gridEventsList.Rows[gridEventsList.RowCount - 1].Cells[2].Value = DaysBetween(DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Year,
+                                                                                              eventsList.events[eventsList.events.Count - 1].NgayThang.Month, eventsList.events[eventsList.events.Count - 1].NgayThang.Day, (eventsList.events[eventsList.events.Count - 1].NgayThang.Month > DateTime.Now.Month) ? DateTime.Now.Year : DateTime.Now.Year + 1);
+                SortDayRemaining();
+                gridEventsList.CurrentCell = gridEventsList.Rows[gridEventsList.RowCount - 1].Cells[0];
+            }
         }
 
         private void UpdateEventsList()

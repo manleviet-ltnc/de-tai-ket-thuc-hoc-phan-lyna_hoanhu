@@ -62,5 +62,19 @@ namespace ZUI_Days
 
             txtEvent.Text = "";
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (txtEvent.Text != "")
+            {
+                DialogResult result = MessageBox.Show("Are you want to close?", "",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                    e.Cancel = false;
+                else if (result == DialogResult.No)
+                    e.Cancel = true;
+            }
+        }
     }
 }

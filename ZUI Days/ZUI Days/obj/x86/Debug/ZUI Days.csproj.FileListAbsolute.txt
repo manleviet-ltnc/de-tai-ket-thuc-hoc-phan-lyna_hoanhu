@@ -32,3 +32,16 @@ E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\Z
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.ListEvents.resources
 E:\github\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Event.resources
 E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Menu.resources
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.exe
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\bin\Debug\ZUI Days.pdb
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csprojResolveAssemblyReference.cache
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.ResolveComReference.cache
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.EditEvent.resources
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.ListEvents.resources
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Event.resources
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Menu.resources
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI_Days.Properties.Resources.resources
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.GenerateResource.Cache
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.csproj.CoreCompileInputs.cache
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.exe
+D:\DTKTHP\de-tai-ket-thuc-hoc-phan-lyna_hoanhu\ZUI Days\ZUI Days\obj\x86\Debug\ZUI Days.pdb
