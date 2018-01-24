@@ -12,7 +12,7 @@ namespace ZUI_Days
     public partial class Event : Form
     {
         EventsList eventsList;
-        Events evts = new Events();
+        public List<Events> evts = new List<Events>();   // Danh sách sự kiện vừa được thêm
 
         public Event(EventsList _eventsList)
         {
@@ -25,7 +25,7 @@ namespace ZUI_Days
             Close();
         }
 
-        private void Save()
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             errorProvider.SetError(txtEvent, "");
             if (txtEvent.Text == "")
@@ -34,12 +34,25 @@ namespace ZUI_Days
                 return;
             }
 
+            Events events = new Events();
+
+            events.TenSuKien = txtEvent.Text;
+            events.NgayThang = dtpDate.Value;
+            evts.Add(events);
+
+            eventsList.AddEvent(events);
+            txtEvent.Text = "";
+        }
+
+        private void Save()
+        {
             StreamWriter sw = null;
             try
             {
                 using (sw = File.AppendText("Events list.txt"))
                 {
-                    sw.WriteLine(evts);
+                    foreach (Events ev in evts)
+                        sw.WriteLine(ev);
                 }
             }
             catch (Exception ex)
@@ -53,18 +66,9 @@ namespace ZUI_Days
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            evts.NgayThang = dtpDate.Value;
-            evts.TenSuKien = txtEvent.Text;
-            eventsList.AddEvent(evts);
-            Save();
-
-            txtEvent.Text = "";
-        }
-
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
+            Save();
             if (txtEvent.Text != "")
             {
                 DialogResult result = MessageBox.Show("Are you want to close?", "",

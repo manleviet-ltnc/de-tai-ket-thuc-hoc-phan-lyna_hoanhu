@@ -34,10 +34,10 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.Eventcol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateTimecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DayRemainingCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBack = new System.Windows.Forms.Button();
+            this.DayRemainingCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateTimecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Eventcol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridEventsList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,13 +95,24 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // Eventcol
+            // btnBack
             // 
-            this.Eventcol.FillWeight = 106.599F;
-            this.Eventcol.HeaderText = "Event";
-            this.Eventcol.MinimumWidth = 70;
-            this.Eventcol.Name = "Eventcol";
-            this.Eventcol.ReadOnly = true;
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Location = new System.Drawing.Point(396, 264);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 35);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // DayRemainingCol
+            // 
+            this.DayRemainingCol.FillWeight = 86.80203F;
+            this.DayRemainingCol.HeaderText = "Day remaining";
+            this.DayRemainingCol.MinimumWidth = 80;
+            this.DayRemainingCol.Name = "DayRemainingCol";
+            this.DayRemainingCol.ReadOnly = true;
             // 
             // DateTimecol
             // 
@@ -113,24 +124,13 @@
             this.DateTimecol.Name = "DateTimecol";
             this.DateTimecol.ReadOnly = true;
             // 
-            // DayRemainingCol
+            // Eventcol
             // 
-            this.DayRemainingCol.FillWeight = 86.80203F;
-            this.DayRemainingCol.HeaderText = "Day remaining";
-            this.DayRemainingCol.MinimumWidth = 80;
-            this.DayRemainingCol.Name = "DayRemainingCol";
-            this.DayRemainingCol.ReadOnly = true;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBack.Location = new System.Drawing.Point(396, 264);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 35);
-            this.btnBack.TabIndex = 4;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.Eventcol.FillWeight = 106.599F;
+            this.Eventcol.HeaderText = "Event";
+            this.Eventcol.MinimumWidth = 70;
+            this.Eventcol.Name = "Eventcol";
+            this.Eventcol.ReadOnly = true;
             // 
             // ListEvents
             // 
@@ -158,10 +158,10 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eventcol;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateTimecol;
         private System.Windows.Forms.DataGridViewTextBoxColumn DayRemainingCol;
-        private System.Windows.Forms.Button btnBack;
     }
 }
 

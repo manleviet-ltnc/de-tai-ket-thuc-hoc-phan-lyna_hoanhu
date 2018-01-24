@@ -15,7 +15,7 @@ namespace ZUI_Days
     {
         Thread thread;
         EventsList eventsList = new EventsList();
-        int count = 0;
+        int quantity = 0;   // Số lượng sự kiện trong danh sách sự kiện
 
         public ListEvents()
         {
@@ -36,8 +36,8 @@ namespace ZUI_Days
                         string[] inputs = line.Split(':');
                         DateTime dt = DateTime.Parse(inputs[0], System.Globalization.CultureInfo.InvariantCulture);
                         eventsList.events.Add(new Events(inputs[1], dt));
-                        gridEventsList.Rows.Add(eventsList.events[count].TenSuKien, eventsList.events[count].NgayThang.ToString("MM-dd-yyyy"));
-                        count++;
+                        gridEventsList.Rows.Add(eventsList.events[quantity].TenSuKien, eventsList.events[quantity].NgayThang.ToString("MM-dd-yyyy"));
+                        quantity++;
                     }
                 }
             }
@@ -60,14 +60,14 @@ namespace ZUI_Days
                 gridEventsList.Rows[i].Cells[2].Value = DaysBetween(DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Year,
                                                                     month, day, (month > DateTime.Now.Month) ? DateTime.Now.Year : DateTime.Now.Year + 1);
             }
-
-            // Sắp xếp số ngày còn lại theo thứ tự tăng dần
+            
             SortDayRemaining();
             gridEventsList.CurrentCell = gridEventsList.Rows[0].Cells[0];
         }
 
         private void SortDayRemaining()
         {
+            // Sắp xếp số ngày còn lại theo thứ tự tăng dần
             gridEventsList.Sort(gridEventsList.Columns[2], ListSortDirection.Ascending);
         }
 
@@ -85,6 +85,7 @@ namespace ZUI_Days
 
         private int DayNumber(int month, int day, int year)
         {
+            // Tính số ngày từ ngày đầu tiên trong năm đến ngày cần tính
             int dayNumber = (month - 1) * 31 + day;
             if (month > 2)
             {
@@ -100,12 +101,17 @@ namespace ZUI_Days
         {
             Event ev = new Event(eventsList);
             ev.ShowDialog();
+            List<Events> events = new List<Events>();
+            events = ev.evts;
 
-            if (count == eventsList.events.Count - 1)
+            for (int i = eventsList.events.Count - events.Count; i < eventsList.events.Count; i++)
             {
-                gridEventsList.Rows.Add(eventsList.events[eventsList.events.Count - 1].TenSuKien, eventsList.events[eventsList.events.Count - 1].NgayThang.ToString("MM-dd-yyyy"));
+                // Thêm dòng chứa sự kiện mới
+                gridEventsList.Rows.Add(eventsList.events[i].TenSuKien, eventsList.events[i].NgayThang.ToString("MM-dd-yyyy"));
+
+                // Tính số ngày còn lại đến lần tiếp theo của sự kiện
                 gridEventsList.Rows[gridEventsList.RowCount - 1].Cells[2].Value = DaysBetween(DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Year,
-                                                                                              eventsList.events[eventsList.events.Count - 1].NgayThang.Month, eventsList.events[eventsList.events.Count - 1].NgayThang.Day, (eventsList.events[eventsList.events.Count - 1].NgayThang.Month > DateTime.Now.Month) ? DateTime.Now.Year : DateTime.Now.Year + 1);
+                                                                                              eventsList.events[i].NgayThang.Month, eventsList.events[i].NgayThang.Day, (eventsList.events[i].NgayThang.Month > DateTime.Now.Month) ? DateTime.Now.Year : DateTime.Now.Year + 1);
                 SortDayRemaining();
                 gridEventsList.CurrentCell = gridEventsList.Rows[gridEventsList.RowCount - 1].Cells[0];
             }
@@ -118,7 +124,7 @@ namespace ZUI_Days
                 StreamWriter sw = null;
                 if (i == 0)
                 {
-                    // Ghi dòng đầu tiên trong file
+                    // Ghi lại file
                     sw = new StreamWriter("Events list.txt");
                     sw.WriteLine(eventsList.events[i]);
                 }
@@ -148,7 +154,7 @@ namespace ZUI_Days
             // Cập nhật lại số ngày còn lại cho sự kiện vừa thay đổi ở dòng được chọn
             gridEventsList.Rows[rowIndex].Cells[2].Value = DaysBetween(DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Year,
                                                                        eventsList.events[rowIndex].NgayThang.Month, eventsList.events[rowIndex].NgayThang.Day, (eventsList.events[rowIndex].NgayThang.Month > DateTime.Now.Month) ? DateTime.Now.Year : DateTime.Now.Year + 1);
-            // Ghi lại thay đổi trong file
+            // Cập nhật sự kiện
             UpdateEventsList();
         }
 
@@ -159,9 +165,19 @@ namespace ZUI_Days
                                                   MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                int rowIndex = gridEventsList.CurrentCell.RowIndex;
-                gridEventsList.Rows.RemoveAt(rowIndex);
-                eventsList.events.RemoveAt(rowIndex);
+                // Danh sách những dòng được chọn trong DataGridView
+                List<DataGridViewRow> selectedRows = new List<DataGridViewRow>();
+                foreach (DataGridViewRow row in gridEventsList.SelectedRows)
+                    selectedRows.Add(row);
+
+                // Xoá những sự kiện được chọn
+                foreach (DataGridViewRow row in selectedRows)
+                {
+                    eventsList.events.RemoveAt(row.Index);
+                    gridEventsList.Rows.Remove(row);
+                }
+
+                // Cập nhật danh sách sự kiện
                 UpdateEventsList();
             }
         }
